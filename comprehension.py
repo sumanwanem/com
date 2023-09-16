@@ -40,8 +40,10 @@ print(c)
 #traditional way
 for l in nums:
     if l > 1:
-        for s in strings:
-            print(l,s)
+        if l != 3:
+            for s in strings:
+                if s != "intro" and s != "list":
+                    print([l,s])
 #list comprehension
-d =[(l,s) for l in nums if l > 1 for s in strings ]
+d =[(l,s) for l in nums if l > 1 if i != 3 for s in strings if s != "intro" and s != "list" ]
 print(d)
