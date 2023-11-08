@@ -1,0 +1,8 @@
+a = input().split()
+b = int, input().split()
+c = map(int, input().split())
+#arr = list(map(int, input().split()))
+print(c)
+print(a)
+print(b)
+#print(arr)
